@@ -42,7 +42,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta property="og:url" content="https://www.sweetsound.co.za/musiq/<?php echo $row2['artist_name_slug'].'/'.$row2['musiq_title_slug'] ?>">
   	    <meta property="og:image:secure" content="https://www.sweetsound.co.za/musiq/images/musiq_images/<?php echo $row2['musiq_coverart'] ?>">
   	    <meta name="description" content="Stream and Download <?php echo $row2['artist_name'].' - '.$row2['musiq_title'].' ['.$row2['musiq_type']?> from your preferred platform. Download MP3 file straight from Sweet Sound Musiq website.">
