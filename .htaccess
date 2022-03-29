@@ -1,0 +1,20 @@
+RewriteEngine On
+
+#RewriteCond %{HTTPS} !on
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^home index.php [NC,L]
+
+RewriteRule ^artists artists.php [NC,L]
+
+RewriteRule ^playlists playlists.php [NC,L]
+
+RewriteRule ^releases musiq.php [NC,L]
+
+RewriteRule ^([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$ musiq-link.php?artist=$1&title=$2 [NC,L]
+
+RewriteRule ^([A-Za-z0-9-]+)$ artist-link.php?artist=$1 [NC,L]
+
+RewriteRule ^playlist/([A-Za-z0-9-]+)$ playlist-link.php?id=$1 [NC,L]

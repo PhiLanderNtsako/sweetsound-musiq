@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Open+Sans:400,600,800');
+@import url("https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Shizuru&display=swap");
+html,
+body {
+    font-family: 'Carter One', cursive;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 2em 2em;
+    justify-items: center;
+    width: 650px;
+    background-color: rgba(24, 19, 19, 0.5);
+    padding: 0;
+    margin: 2em auto;
+}
+.preview-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.preview-img img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin-bottom: 0.9em;
+}
+
+.details h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 21px;
+    color: white;
+}
+
+.details h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ccc;
+    margin: 0;
+}
+
+#stats{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#stats h2{
+    padding: 0 0.9em;
+    font-size: 17px;
+}
+
+#stats h2 i{
+    padding: 0 0.2em;
+}
+
+.sml-btn {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#likeButton:hover {
+    color: #25D366;
+}
+
+#downloadButton:hover {
+    color: #00ACEE;
+}
+
+#ShareButton:hover {
+    color: #4267B2;
+}
+
+#instagram:hover {
+    color: #bc2a8d
+}
+
+#youtube:hover {
+    color: #FF0000;
+}
+
+.link-options {
+    box-sizing: border-box;
+    height: 100%;
+    min-width: 650px;
+    padding: 0.5em;
+    /* background-color: red; */
+}
+
+.link-option-action,
+.link-option-title {
+    text-align: center;
+}
+
+.link-option-title {
+    color: #fff;
+    text-align: left;
+}
+
+.link-option-action {
+    box-sizing: border-box;
+    width: 100%;
+    transition: all .2s ease-in-out;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 1em 2em;
+    font-size: 0.9rem;
+    border-radius: 3px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.link-option {
+    display: block;
+    padding: 2em 1em;
+    border-bottom: 1px solid #ffd204;
+    cursor: pointer;
+    text-decoration: none;
+    color: #282828;
+    transition: all .2s ease-in-out;
+}
+
+.link-option:hover {
+    background-color: rgba(167, 165, 157, 0.1);
+    transition: all .2s ease-in-out;
+}
+
+.link-option:hover .link-option-action {
+    color: #ffd204;
+    transition: all .2s ease-in-out;
+}
+
+.link-option-row-audio {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.volume{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.volume i {
+    font-size: 0.9em;
+    color: orange;
+    padding: 0 0.2em;
+    cursor: pointer;
+}
+
+.volume-slider{
+    cursor: pointer;
+}
+
+.timecode {
+    color: white;
+  }
+
+#totalDuration{
+    color: orange;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.2em 0;
+}
+
+.link-option-row-audio .sml-btn{
+    font-size: 3rem;
+    padding: 0 0.3em;
+}
+
+.link-option-row {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-option-img {
+    max-width: 100px;
+    max-height: 30px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.link-options-header {
+    font-size: 14px;
+    line-height: 20px;
+    background: #1b1b1b;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    border-bottom: 1px solid rgb(236, 195, 15);
+}
+
+.link-options-triangle-back {
+    width: 0;
+    height: 0;
+    border-color: rgb(236, 195, 15) transparent transparent;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    margin: 0 auto;
+    top: 20px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 9;
+}
+
+.link-options-triangle {
+    width: 0;
+    height: 0;
+    border-color: rgb(236, 195, 15) transparent transparent;
+    border-style: solid;
+    border-width: 8px 8px 2px;
+    margin: 0 auto;
+    top: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+footer {
+    top: 0;
+}
+
+.copywrite-text {
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    color: rgb(236, 195, 15);
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(236, 195, 15);
+}
+
+.footer a:hover {
+    color: #ffd204;
+}
